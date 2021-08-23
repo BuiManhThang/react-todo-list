@@ -1,0 +1,44 @@
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.item.edited {
+  background-color: rgba(221, 45, 45, 0.616);
+}
+
+.item.edited:hover {
+  background-color: rgba(221, 45, 45, 0.616);
+}
+
+.item:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.item__title {
+  flex-grow: 1;
+  font-size: 18px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.item__title.completed {
+  text-decoration: line-through;
+  color: rgb(175, 166, 166);
+}
+
+.item__delete {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.item__delete:hover {
+  color: lightcoral;
+}
